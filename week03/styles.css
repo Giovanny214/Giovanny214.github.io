@@ -20,5 +20,13 @@ header h1 {
     background-image: url("header-image-1.gif");
     background-position: top left;
     background-repeat: no-repeat;
-};
+}
 
+#container {
+    margin-bottom: 30px;
+}
+
+nav {
+    float: left;
+    width: 150px;
+};
