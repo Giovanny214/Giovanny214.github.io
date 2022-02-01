@@ -20,7 +20,7 @@ header h1 {
     background-image: url("header-image-1.gif");
     background-position: top left;
     
-};
+}
 
 #container {
     margin-bottom: 30px;
@@ -29,4 +29,4 @@ header h1 {
 nav {
     float: left;
     width: 150px;
-};
+}
