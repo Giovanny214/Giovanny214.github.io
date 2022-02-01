@@ -38,3 +38,9 @@ nav ul {
     color: #7C1A00;
 }
 
+nav a {
+    color: white;
+    background-color: #8c9273;
+    padding: 3px 60px 3px 3px;
+    text-decoration: none;
+}
