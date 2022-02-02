@@ -61,7 +61,7 @@ footer {
     text-align: center;
 }
 
-footer li{
+footer li {
     display: inline;
     padding: 10px;
 }
@@ -91,4 +91,4 @@ a {
 
 a:hover {
     background-color: #ffe597;
-};
+}
