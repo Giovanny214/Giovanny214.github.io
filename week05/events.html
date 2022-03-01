@@ -1,62 +1,44 @@
 <!DOCTYPE html>
-
 <html>
-
 <head>
 
+	<script>
 
+	function showEvent(from, text) {
 
-<script>
+	alert( from + text );}
 
-function showEvent(from, text) {
+	showEvent('Load', ' Page');
 
-alert( from + text );}
+	</script>
+	<style>
 
-showEvent('Load', ' Page');
+	button {
 
-</script>
+	font-size: 1em;
 
+	background-color: #EBF5FF;
 
-<style>
+	color: #209211;
 
-button {
+	border: 2px solid black;
 
-font-size: 1em;
+	box-shadow: 4px 4px 4px #999999;
+	}
 
-background-color: #EBF5FF;
-
-color: #209211;
-
-border: 2px solid black;
-
-box-shadow: 4px 4px 4px #999999;
-}
-
-</style>
-
-
-
-<title>A button function</title>
-
+	</style>
+	<title>A button function</title>
 </head>
-
 <body onload="showEvent('Hello Page!' , ' The page has loaded.')">
+	<p>Click to trigger a function:</p><button onclick="myFunction()">Click Me!</button>
+	<p id="demo"></p>
+	<script>
 
-<p>Click to trigger a function:</p>
+	function myFunction() {
 
-<button onclick="myFunction()">Click Me!</button>
+	document.getElementById("demo").innerHTML = "Hello World! Congratulation, you clicked on the button!";
+	}
 
-<p id="demo"></p>
-
-<script>
-
- function myFunction() {
-
- document.getElementById("demo").innerHTML = "Hello World! Congratulation, you clicked on the button!";
-}
-
-</script>
-
+	</script>
 </body>
-
 </html>
