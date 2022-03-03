@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My New Clock</title>
+</head>
+<body>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<meta charset="utf-8">&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; 
+	<script>
+	function updateTime() {
+
+	// get all parts of the current time
+	let now = new Date();
+	let hours = now.getHours();
+	let minutes = now.getMinutes();
+	   let seconds = now.getSeconds();
+
+	// add leading zero's to minutes and seconds
+	   if (minutes < 10) {
+	   minutes = '0' + minutes;
+	   }
+	   if (seconds < 10) {
+	   seconds = '0' + seconds;
+	   }
+
+	   // get time of day (am or pm)
+	if (hours >= 12 && hours < 24) {
+	var timeOfDay = 'PM';
+	   }
+	else {
+	var timeOfDay = 'AM';
+	}
+
+	// convert hours from 24-hour time to 12-hour time
+	if (hours > 12) {
+	hours = hours - 12;
+	   }
+
+	// splice them together into a character string named "currentTime"
+	let currentTime = hours + ':' + minutes + ':' + seconds + '  ' + timeOfDay;
+
+	   // get the clock div
+	let myClock = document.getElementById('clock');
+
+	// write the currentTime string to the clock div
+	   myClock.innerHTML = currentTime;
+	}
+	</script> &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<style>
+
+	div#clock {
+	text-align: center;
+	background-color: #333333;
+	width: 200px
+	color white;
+	padding: 10px;
+	margin: 10px;
+	border-radius: 18px
+	}
+
+	div#clock {
+	font-family: sans-serif;
+	   font-size: 30px;
+	color: white;
+	}
+	div#clock {
+	   font-size: 48px;
+	   }
+	</style>&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<div id="clock"></div>&nbsp;&nbsp;
+</body>
+</html>
